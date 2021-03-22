@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 3px 1px #999;
+  color: #666;
+  padding: 1rem;
+  width: 22rem;
+  max-width: 100%;
+}
+
+.header {
+  text-align: center;
+}
+.header {
+  text-align: center;
+}
+.header p {
+  text-align: center;
+  font-size: .9rem;
+  margin-top: -.7rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  position: relative;
+  padding: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-control input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: .9rem;
+}
+
+.form-control span i{
+  margin-right: 18rem;
+  margin-top: .2rem;
+  visibility: visible;
+}
+.form-control i.fa-eye {
+  position: absolute;
+  top: .8rem;
+  right: 1rem;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.form-control i {
+  position: absolute;
+  top: .8rem;
+  right: 1rem;
+  visibility: hidden;
+}
+.form-control i.fa-eye {
+  position: absolute;
+  top: .8rem;
+  right: 2rem;
+}
+
+.form-control.success input {
+  border-bottom-color: #32a36b;
+}
+.form-control.error input {
+  border-bottom-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #32a36b;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control.error small {
+  visibility: inherit;
+  color: #e74c3c;
+  
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -.38rem;
+  left: 0;
+  visibility: hidden;
+  padding-left: .9rem;
+}
+
+.container .btn-1 {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: #20bb9c;
+  background: #20bb9c;
+  padding: .5rem;
+  color: #fff;
+  border-color: #32a36b;
+  border-radius: .2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.btn-1:hover {
+  opacity: 0.8;
+}
+.bottom-text {
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: .9rem;
+}
+.bottom-text a {
+  text-align: center;
+  
+  color: #20bb9c;
+  text-decoration: none;
+}
+
+footer {
+  max-width: 20rem;
+  color: #bbb;
+}
+footer a {
+  max-width: 20rem;
+  color: #bbb;
+}

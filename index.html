@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Form Validation Using JavaScript</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Create Account</h1>
+      <p>It's free and hardly takes more than 30 seconds.</p>
+    </div>
+    <form class="form" id="form"  onsubmit="return checkInputs()">
+         <div class="form-control">
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" id="username" placeholder="Username">
+        <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+      </div>
+      
+      <div class="form-control">
+        <span><i class="fa fa-paper-plane"></i></span>
+        <input type="email" id="email" placeholder="Email Address">
+        <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+      </div>
+      
+      <div class="form-control">
+        <span><i class="fa fa-lock"></i></span>
+        <input type="password" id="password" placeholder="Password"><i class="fa fa-eye" id="btn" onclick="toggle()"></i>
+        <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <span><i class="fas fa-user-lock"></i></span>
+        <input type="password" id="password2" placeholder="Confirm Password">
+         <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+      </div>
+      <button type="submit" class="btn-1">Sign Up</button>
+      <p class="bottom-text">By clicking the sign up button, you agree to our <a href="#">Terms & Condition,</a> and <a href="#">Privacy Policy.</a></p>
+    </form>
+
+  </div>
+  <footer>
+    <p>Already have an account? <a href="#">Login here</a></p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
