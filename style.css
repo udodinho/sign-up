@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +10,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+  max-height: 100vh;
+  margin: 4rem 0;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
   color: #666;
   padding: 1rem;
   width: 22rem;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .header {
@@ -48,6 +49,7 @@ body {
   outline: none;
   width: 100%;
   font-size: .9rem;
+  margin-left: .7rem;
 }
 
 .form-control span i{
@@ -72,7 +74,7 @@ body {
 .form-control i.fa-eye {
   position: absolute;
   top: .8rem;
-  right: 2rem;
+  right: -.3rem;
 }
 
 .form-control.success input {
@@ -100,7 +102,7 @@ body {
 
 .form-control small {
   position: absolute;
-  bottom: -.38rem;
+  bottom: -1rem;
   left: 0;
   visibility: hidden;
   padding-left: .9rem;
@@ -141,4 +143,35 @@ footer {
 footer a {
   max-width: 20rem;
   color: #bbb;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 3rem 0;
+  }
+  .container {
+    width: 18rem; 
+  }
+
+  .form-control small {
+    bottom: -.99rem;
+  }
+
+  .form-control span i{
+    margin-right: 14rem;
+    margin-top: .2rem;
+ }
+
+  .form-control i.fa-eye {
+    right: -.3rem;
+  }
+
+  .header p {
+    font-size: .74rem;
+    margin-bottom: .9rem;
+  }
+
+  .bottom-text {
+    font-size: .7rem;
+  }
 }
